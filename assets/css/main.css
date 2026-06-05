@@ -49,7 +49,7 @@ a { text-decoration: none; color: inherit; }
   transition: background .3s var(--ease);
 }
 .nav-logo {
-  display: flex; align-items: center; gap: 10px;
+  display: flex; align-items: center; gap: 10px; flex-shrink: 0;
 }
 .nav-logo img { height: 60px; width: auto; transform: translateY(4px); }
 .nav-logo-text {
