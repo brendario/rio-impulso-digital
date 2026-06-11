@@ -37,6 +37,7 @@
     <img
       src="./assets/branding/rio-logo-horizontal.webp"
       alt="RiO Impulso Digital"
+      width="245" height="60"
       onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
     >
     <span class="nav-logo-text">RiO <em>Impulso</em> Digital</span>
@@ -299,7 +300,8 @@
       <div class="about-visual reveal">
         <div class="av-glow"></div>
         <div class="av-inner">
-          <img src="./assets/img/brenda-profile.webp" alt="Brenda Rivera Obando"
+          <img src="./assets/img/brenda-profile-260w.webp" alt="Brenda Rivera Obando"
+               width="220" height="260"
                style="display:block;margin:0 auto 1.2rem;width:220px;height:260px;border-radius:1.5rem;object-fit:cover;object-position:center top;position:relative;z-index:1;">
           <div class="av-name">Brenda Rivera Obando</div>
           <div class="av-role">Consultora Tecnológica · RiO Impulso Digital</div>
@@ -360,7 +362,11 @@
       <div class="footer-tag">Consultoría tecnológica B2B · Chile · Argentina</div>
     </div>
     <div class="footer-col footer-col--center">
-      <img src="./assets/branding/rio-logo-primary.png" alt="RiO Impulso Digital" class="footer-logo">
+      <picture>
+        <source media="(max-width: 900px)" srcset="./assets/branding/rio-logo-primary-48x48.webp">
+        <source srcset="./assets/branding/rio-logo-primary-84x84.webp">
+        <img src="./assets/branding/rio-logo-primary.png" alt="RiO Impulso Digital" class="footer-logo" width="48" height="48">
+      </picture>
     </div>
     <ul class="footer-links footer-col footer-col--right">
       <li><a href="#servicios">Servicios</a></li>
