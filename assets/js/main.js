@@ -143,12 +143,8 @@ if (emailLink) {
 document.querySelectorAll('.line-cta').forEach(btn => {
   btn.addEventListener('click', () => {
     if (typeof gtag === 'function') {
-      const text = btn.textContent.trim();
-      let ctaId = 'unknown';
-      if (text.includes('automatizar'))  ctaId = 'estandarizada';
-      else if (text.includes('medida'))  ctaId = 'medida';
-      else if (text.includes('diagn'))   ctaId = 'consultoria';
-      gtag('event', 'cta_click', { cta_id: ctaId, cta_text: text });
+      const ctaId = btn.dataset.service || 'unknown';
+      gtag('event', 'cta_click', { cta_id: ctaId, cta_text: btn.textContent.trim() });
     }
   });
 });
